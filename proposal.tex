@@ -1,0 +1,63 @@
+%
+% LO, Li-yu 
+%
+
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{graphicx}
+\usepackage[english]{babel}
+\usepackage[]{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage[a4paper, portrait, margin=1.0in]{geometry}
+\usepackage{hyperref}
+\usepackage{algorithm,algpseudocode}
+\usepackage{indentfirst}
+\usepackage{soul}
+\usepackage{color}
+
+
+%
+\begin{document}
+%
+   \title{\textbf{Safety-Aware Autonomous Racing Takeover Via Sampled-Based MPC and Control Barrier Functions}  \\
+   ME555 Automotive Engineering Design \\
+   Proposal}
+      
+   \author{
+      Patrick Li-Yu Lo \& Miles Xingyu Ye \\ 
+    %   22039044R/20997405 \\ 
+    %   e-mail: patty.lo@connect.polyu.hk lloac@connect.hkust.hk
+      }          
+   \date{}
+
+   \maketitle
+
+   \section{Abstract}
+    In the course of autonomous racing, 
+
+   \section{Research Objective}
+   \begin{itemize}
+    \item To develop an autonomous vehicle takeover system for autonomous racing scenarios, with potential application to the Indy Autonomous Challenge, in support of Duke Motorsport. 
+    \item To implement Model Predictive Path Integral (MPPI) control \cite{williams2015model}, a sample-based model predictive control framework, to achieve optimal takeover maneuvers.
+    \item To integrate Control Barrier Function (CBF) \cite{ames2019control} constraints within the control architecture to ensure safety guarantees during vehicle operation.
+    \item To incorporate motion prediction based on temporal learning methods to inform MPPI-based trajectory generation.
+    \item To establish simulation environments for validation of the proposed methodology and to facilitate future research and development.
+    \item To integrate the simulation framework with Simulink and conduct experimental validation on two F1TENTH vehicles, subject to time availability.
+   \end{itemize}
+
+
+   \section{Related Work}
+
+
+   
+
+%    \section*{Project Brief Description}
+%    Further detail will be elucidated in the final report.
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}
+
