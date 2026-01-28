@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex proposal"] 1769565375 "proposal.aux" "proposal.bbl" "proposal" 1769565375
+["bibtex proposal"] 1769580738 "proposal.aux" "proposal.bbl" "proposal" 1769580851
   "/usr/local/texlive/2022/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1440712899 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "proposal.aux" 1769565375 1252 53ceb76d80a50bd95a8087375314bf67 "pdflatex"
-  "references.bib" 1768487947 3458 e48b5640a9a95a24b72dc93f111d71f5 ""
+  "proposal.aux" 1769580851 1562 3ca207d46e9b8d57c1cd965da6cd14bc "pdflatex"
+  "references.bib" 1769580453 6317 831c758a8401d90bd81f43a5fa28e1b8 ""
   (generated)
   "proposal.bbl"
   "proposal.blg"
-["pdflatex"] 1769565375 "/Users/patricklo/Desktop/lab_duke/course/2526_sem2/automotive/proposal/proposal.tex" "proposal.pdf" "proposal" 1769565375
-  "/Users/patricklo/Desktop/lab_duke/course/2526_sem2/automotive/proposal/proposal.tex" 1769565374 2074 c4a1f6df062a26ac8f9a75472e93c4af ""
+["pdflatex"] 1769580850 "/Users/patricklo/Desktop/lab_duke/course/2526_sem2/automotive/proposal/proposal.tex" "proposal.pdf" "proposal" 1769580851
+  "/Users/patricklo/Desktop/lab_duke/course/2526_sem2/automotive/proposal/proposal.tex" 1769580850 6553 674144bace5ce17d4bdc8590e3d30ade ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1136768653 1536 06717a2b50de47d4087ac0e6cd759455 ""
@@ -100,10 +100,11 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1664385961 2826436 c0e00433cb8449ffee47ad124cf408b8 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "proposal.aux" 1769565375 1252 53ceb76d80a50bd95a8087375314bf67 "pdflatex"
-  "proposal.bbl" 1769565375 1381 ec1ae4b43fbf0f712807eb042e67f498 "bibtex proposal"
-  "proposal.out" 1769565375 325 d773dff6971cd0ea78e5538db61bd9f5 "pdflatex"
-  "proposal.tex" 1769565374 2074 c4a1f6df062a26ac8f9a75472e93c4af ""
+  "fig/gantt.png" 1769579731 31538 9209ca6bac05287577e61677b41272a8 ""
+  "proposal.aux" 1769580851 1562 3ca207d46e9b8d57c1cd965da6cd14bc "pdflatex"
+  "proposal.bbl" 1769580738 3526 e2d956ac9c8edb0475ed36ed7651aef5 "bibtex proposal"
+  "proposal.out" 0 -1 0 "pdflatex"
+  "proposal.tex" 1769580850 6553 674144bace5ce17d4bdc8590e3d30ade ""
   (generated)
   "proposal.aux"
   "proposal.log"

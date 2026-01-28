@@ -21,7 +21,7 @@
 %
 \begin{document}
 %
-   \title{\textbf{Safety-Aware Autonomous Racing Takeover Via Sampled-Based MPC and Control Barrier Functions}  \\
+   \title{\textbf{Safety-Aware Autonomous Racing Takeover Via Sampled-Based MPC}  \\
    ME555 Automotive Engineering Design \\
    Proposal}
       
@@ -34,21 +34,51 @@
 
    \maketitle
 
-   \section{Abstract}
-    In the course of autonomous racing, 
+   \section*{Background}
+    In any form of vehicle racing, takeover maneuvers are deemed critical to time performance, as the optimality of an executed trajectory can significantly affect the race outcome. Meanwhile, with the rapid advancements in mobile computing, automation technologies have substantially emerged across various fields, and the racing sport is no exception \cite{betz2023tum, li2023formula}, where various autonomous racing challenges have emerged. Within this context, conventional autonomous driving techniques may deteriorate under highly competitive dynamic conditions, making this a worthwhile research topic to investigate. Therefore, within this project, we aim to design \textit{an optimal controller for takeover maneuvers}.
 
-   \section{Research Objective}
+    \textbf{On Optimal Control and MPC}. With the keywords ``optimality'' and ``executed trajectory,'' one should naturally arrive at the concept of trajectory optimization. With the increasing computational power equipped on edge devices, model predictive control (MPC), a subset of trajectory optimization, has been extensively studied and applied across various fields.
+    
+    For instance, teams from Zurich have developed MPC frameworks for aggressive quadcopter maneuvers \cite{sun2022comparative, torrente2021data}, whereas researchers from Stanford \cite{thompson2024adaptive}, who have spent years on autonomous drifting cars, have also proposed exploiting MPC to handle complex vehicle dynamics. Despite its expensive computational requirements, MPC formulates the optimal control problem as a constrained optimization problem that explicitly incorporates plant dynamics, while handling additional constraints \cite{qin2003survey}. This makes it a powerful tool for systems with complex dynamics. 
+    
+    Here, autonomous ground vehicles are particularly suitable plants for MPC due to their strong dynamical interactions with ground friction. Furthermore, as the proposed project is subject to overtaking objectives, kinematic constraints can be naturally incorporated into the MPC cost function. Overall, this motivates the adoption of MPC as the main framework for addressing optimal control problems in the proposed autonomous racing scenarios.
+
+    \textbf{Simulation and Hardware Model}. For any autonomous system, simulation serves as the first step to validate proposed methods in a safe, repeatable, and cost-efficient manner \cite{koenig2004design}. It enables rapid prototyping, parameter tuning, and systematic evaluation under diverse scenarios. In addition, before reaching final deployment, a scaled-down hardware model is often constructed to bridge the gap between simulation and real-world systems, allowing practical issues such as sensing, actuation delays, and model mismatch to be addressed in a controlled setting \cite{o2020f1tenth}. 
+    
+    In this project, to address the gap between high-level algorithm design and real-world deployment, we will therefore develop our own kinematic-based simulation environment and construct an F1TENTH-scale vehicle (or a closely related platform) to validate the proposed methods under both simulated and physical conditions.
+
+    % \textbf{On MPC}. MPC can
+
+   \section*{Research Objective}
    \begin{itemize}
     \item To develop an autonomous vehicle takeover system for autonomous racing scenarios, with potential application to the Indy Autonomous Challenge, in support of Duke Motorsport. 
     \item To implement Model Predictive Path Integral (MPPI) control \cite{williams2015model}, a sample-based model predictive control framework, to achieve optimal takeover maneuvers.
-    \item To integrate Control Barrier Function (CBF) \cite{ames2019control} constraints within the control architecture to ensure safety guarantees during vehicle operation.
-    \item To incorporate motion prediction based on temporal learning methods to inform MPPI-based trajectory generation.
+    \item To integrate Control Barrier Function (CBF) \cite{ames2019control} constraints within the control architecture to incorporate safety awareness during vehicle operation.
+    % \item To incorporate motion prediction based on temporal learning methods to inform MPPI-based trajectory generation.
     \item To establish simulation environments for validation of the proposed methodology and to facilitate future research and development.
     \item To integrate the simulation framework with Simulink and conduct experimental validation on two F1TENTH vehicles, subject to time availability.
    \end{itemize}
 
+    \section*{Execution}
+    \begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.9\textwidth]{fig/gantt.png}
+    \caption{Project Gantt Chart}
+    \label{fig:gantt}
+    \end{figure}
+    \begin{itemize}
+    \item \textbf{Simulator}: A kinematic-based simulator will be developed in the early stage of the project to support prototyping and initial validation of control and planning algorithms.
+    \item \textbf{MPPI}: A vanilla MPPI controller will be implemented as a sampling-based baseline for trajectory optimization and control.
+    \item \textbf{MPPI weight tuning}: An investigation on adaptive weighting strategies will be conducted to improve MPPI performance under varying racing and overtaking scenarios.
+    \item \textbf{Control barrier function}: Control barrier functions will be integrated into the framework to provide formal safety guarantees during aggressive maneuvers.
+    \item \textbf{F1TENTH car design}: In parallel with algorithm development, the F1TENTH hardware platform will be designed and assembled for real-world validation.
+    \item \textbf{Experiment}: Final experiments will be carried out on the physical platform to evaluate the proposed methods in realistic racing environments.
+    \end{itemize}
 
-   \section{Related Work}
+    \section*{AI Usage}
+    ChatGPT and Claude is used within this proposal for grammar checking and Latex formatting.
+   
+%    \section{Related Work}
 
 
    
